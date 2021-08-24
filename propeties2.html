@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS properties</title>
+	<style type="text/css">
+		body{
+			font-family: cursive;
+		}
+		h5{
+			margin-top: 5rem;
+			font-size: 3rem;
+			font-variant: small-caps;
+			float: right; 
+			margin-right: 15px;
+		}
+		p{
+			padding-top: 20vh;
+			float: left;
+		}
+		ul{
+			list-style: square;
+			background-color: #ff9999;
+			padding: 10px;
+		}
+		ul li{
+			background-color: #ffe5e5;
+			padding:10px;
+		}
+		hr{
+			width: 80%;
+			margin-top: 3rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		button{
+			padding:  15px 35px;
+			text-align: center;
+			align-self: center;
+			cursor: pointer;
+			border: 0.5px solid coral;
+			border-radius: 0.5rem;
+			color: white;
+			font-size:16px;
+			margin-left: 550px; 
+			background-color: coral;
+			display: inline-block;	
+		}
+		span {
+  			cursor: pointer;
+  			display: inline-block;
+  			position: relative;
+  			transition: 0.5s;
+		}
+
+		span:after {
+  			content: '\00bb';
+ 			position: absolute;
+  			opacity: 0;
+  			top: 0;
+  			right: -20px;
+  			transition: 0.5s;
+		}
+
+		button:hover span {
+  			padding-right: 25px;
+		}
+
+		button:hover span:after {
+  			opacity: 1;
+  			right: 0;
+		}
+
+	</style>
+</head>
+<body>
+		<h5> float right</h5>
+		<p> float left </p>
+		<ul>
+			<li> cat</li>
+			<li> dog</li>
+			<li> mouse</li>
+		</ul>
+		<hr>
+		<button> <span>Click Me</span></button>
+	
+</body>
+</html>
